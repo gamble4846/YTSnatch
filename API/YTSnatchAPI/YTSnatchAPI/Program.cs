@@ -18,11 +18,7 @@ var app = builder.Build();
 app.UseCors("AnyAndAll");
 app.UseSwagger();
 app.UseSwaggerUI();
-
-app.UseHttpsRedirection();
-
+app.UseWebSockets();
 app.UseAuthorization();
-
 app.MapControllers();
-
 app.Run();
